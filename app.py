@@ -3,11 +3,22 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 @app.route("/")
-
 def home():
-    return render_template("digitalhealthfund.html")
+    return render_template("landing.html")
+
+@app.route("/investments")
+def investments():
+    return render_template("investments.html")
+
+@app.route("/thesis")
+def thesis():
+    return render_template("thesis.html")
+
+@app.route("/contact")
+def contact():
+    return render_template("contact.html")
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=5000)
+    app.run(host='0.0.0.0', port=80)
 
 
