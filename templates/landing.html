@@ -3,9 +3,11 @@
 {% block body %}
 
       <main role="main" class="inner cover">
-        <img src="https://www.finnegan.com/images/content/6/5/v2/65257/23-Health.png" alt=""> 
+        <!-- <img src="https://www.finnegan.com/images/content/6/5/v2/65257/23-Health.png" alt=""> --> 
+        <img src="{{ url_for('static',    filename='digitalhealthfundimage_orange_v1.png') }}" alt"" width="400" height="230"
+        style="padding:10px;">
         <h1 class="cover-heading">The Digital Health Fund.</h1>
-        <p class="lead">The Digital Health Fund (DHF) is focused on providing financial assistance and mentorship to the next generation of healthcare providers and researchers to help assess the acceptability, feadability, and efficacy of digial health applications.</p>
+        <p class="lead">The Digital Health Fund (DHF) provides financial assistance, support, and mentorship to the next generation of healthcare researchers interested in understanding the acceptability, feadability, and efficacy of digial health technologies.</p>
       </main>
 
       <br>
