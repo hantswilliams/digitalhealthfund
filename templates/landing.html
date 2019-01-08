@@ -1,15 +1,16 @@
 {% extends "base.html" %}
-
 {% block body %}
 
-      <main role="main" class="inner cover">
-        <!-- <img src="https://www.finnegan.com/images/content/6/5/v2/65257/23-Health.png" alt=""> --> 
-        <img src="{{ url_for('static',    filename='digitalhealthfundimage_orange_v1.png') }}" alt"" width="400" height="230"
-        style="padding:10px;">
-        <h1 class="cover-heading">The Digital Health Fund.</h1>
-        <p class="lead">The Digital Health Fund (DHF) provides financial assistance, support, and mentorship to the next generation of healthcare researchers interested in understanding the acceptability, feadability, and efficacy of digial health technologies.</p>
-      </main>
-
-      <br>
-
-{% endblock %}
+    <!-- END templateux-navbar -->
+    <section class="templateux-hero">
+      <div class="container">
+        <div class="row align-items-center justify-content-center intro">
+          <div class="col-md-10" data-aos="fade-up">
+            <h1>We provide <span style="color: #78e08f"> $$$ </span> to support the next generation of digital health researchers and providers</h1>
+            <!-- <a href="#next" class="go-down js-smoothscroll"></a> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END templateux-hero -->
+  {% endblock %}

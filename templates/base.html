@@ -1,56 +1,80 @@
-<!DOCTYPE html>
-<!-- saved from url=(0050)https://getbootstrap.com/docs/4.0/examples/cover/# -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-<!--     <link rel="icon" href="https://getbootstrap.com/favicon.ico">
- -->
-    <title>Digital Health Fund</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="{{ url_for('static',    filename='bootstrap.min.css') }}" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="{{ url_for('static',    filename='cover.css') }}" rel="stylesheet">
+    <title>Digital Health Fund &mdash; Digital Health Fund</title>
+    <link rel="stylesheet" href="{{ url_for('static',    filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',    filename='css/aos.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',    filename='css/hamburgers/hamburgers.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',    filename='css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',    filename='fonts/icomoon/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',    filename='css/animsition.min.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
+    <link rel="stylesheet" href="{{ url_for('static',    filename='css/style.css') }}">
   </head>
-
-  <body class="text-center hasGoogleVoiceExt">
-
-    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
-      <header class="masthead mb-auto">
-        <div class="inner">
-          <h5 class="masthead-brand">Digital Health Fund</h5>
-          <nav class="nav nav-masthead justify-content-center">
-            <a class="nav-link" href="/">Home</a>
-            <a class="nav-link" href="/thesis">Thesis</a>
-            <a class="nav-link" href="/portfolio">Portfolio</a>
-            <a class="nav-link" href="/contact">Contact</a>
-          </nav>
-        </div>
-      </header>
-
-
-      {% block body %}{% endblock %}
-
-
-
-      <footer class="mastfoot mt-auto">
-        <div class="inner">
-          <p></p>
-        </div>
-      </footer>
-    </div>
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="{{ url_for('static',    filename='jquery-3.2.1.slim.min.js') }}" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="{{ url_for('static',    filename='popper.min.js') }}"></script>
-    <script src="{{ url_for('static',    filename='bootstrap.min.js') }}"></script>
+  <body>
   
+  <div class="js-animsition animsition" data-animsition-in-class="fade-in" data-animsition-out-class="fade-out">
 
-</body></html>
+    <header class="templateux-navbar" data-aos="fade-down">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-3 col-3"><div class="site-logo"><a href="/" class="animsition-link">Digital Health Fund</a></div></div>
+          <div class="col-sm-9 col-9 text-right">
+
+            <button class="hamburger hamburger--spin toggle-menu ml-auto js-toggle-menu" type="button">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>  
+
+            <nav class="templateux-menu js-templateux-menu" role="navigation">
+              <ul class="list-unstyled">
+                <li class="d-md-none d-block active"><a href="/" class="animsition-link">Home</a></li>
+                <li><a href="/thesis" class="animsition-link">Thesis</a></li>
+                <li><a href="/portfolio" class="animsition-link">Portfolio</a></li>
+                <!-- <li><a href="blog.html" class="animsition-link">Blog</a></li> -->
+                <li><a href="/contact" class="animsition-link">Contact</a></li>
+              </ul>
+            </nav>  
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- END templateux-navbar -->
+    {% block body %}{% endblock %}
+    <!-- END templateux-hero -->
+
+    <!-- END call to action -->
+
+    <footer class="templateux-footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 text-md-left text-center">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            digital health fund // a private foundation managed by Dr. Williams
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          </p>
+          </div>
+          <div class="col-md-6 text-md-right text-center footer-social">
+<!--             <a href="#" class="p-3"><span class="icon-facebook2"></span></a>
+            <a href="#" class="p-3"><span class="icon-twitter2"></span></a>
+            <a href="#" class="p-3"><span class="icon-dribbble2"></span></a>
+            <a href="#" class="p-3"><span class="icon-instagram"></span></a> -->
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  
+  <script src="{{ url_for('static',    filename='js/scripts-all.js') }}"></script>
+  <script src="{{ url_for('static',    filename='js/main.js') }}"></script>
+  
+  </body>
+</html>

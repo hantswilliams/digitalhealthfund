@@ -7,8 +7,8 @@ def home():
     return render_template("landing.html")
 
 @app.route("/portfolio")
-def investments():
-    return render_template("investments.html")
+def portfolio():
+    return render_template("portfolio.html")
 
 @app.route("/thesis")
 def thesis():
