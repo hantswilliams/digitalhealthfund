@@ -181,6 +181,10 @@ server {
 	- `pip install gunicorn`
 - Again, to run the app:
 	- `gunicorn app:app -b :8000 &`
+- Later on, if you make changes and want to reset the python flask app: 
+        - `ps ax|grep gunicorn`
+        - then perform `sudo kill {pid number}`
+        - next to get it started back up: `gunicorn app:app -b :8000 &`
 
 
 
